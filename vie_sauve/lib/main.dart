@@ -1,10 +1,8 @@
 import 'package:flutter/material.dart';
-import 'menu.dart';
+import 'mespages/navigation.dart';
 
 void main() {
-  runApp(
-    const MyApp(),
-  );
+  runApp(const MyApp());
 }
 
 class MyApp extends StatelessWidget {
@@ -14,12 +12,12 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Vie_sauve App',
+      title: 'vie sauve',
       debugShowCheckedModeBanner: false,
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
-      home: const Menu(),
+      home: NaviagtionPage(),
     );
   }
 }
